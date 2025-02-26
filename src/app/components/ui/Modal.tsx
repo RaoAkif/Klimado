@@ -17,11 +17,13 @@ export default function Modal({ onClose }: ModalProps) {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white rounded-2xl shadow-xl max-w-lg w-full p-8 relative">
+      <div
+        className="bg-white shadow-xl border border-[#E4E4E4] w-[520px] h-[631px] p-[32px] rounded-[16px] relative flex flex-col"
+      >
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl"
+          className="absolute top-[32px] right-[32px] text-gray-500 hover:text-gray-700 text-2xl"
         >
           ✖
         </button>
@@ -34,13 +36,13 @@ export default function Modal({ onClose }: ModalProps) {
           Please provide us with your basic details
         </p>
 
-        <hr className="border-gray-300 my-4" />
+        <hr className="border-[#E4E4E4] my-4" />
 
         {/* Form */}
-        <form>
+        <form className="flex flex-col gap-[16px] flex-1">
           {/* Full Name */}
-          <div className="mb-4">
-            <label className="block text-[14px] font-semibold text-[#1D2029] font-montserrat">
+          <div className="flex flex-col">
+            <label className="text-[14px] font-semibold text-[#1D2029] font-montserrat mb-2">
               Full Name*
             </label>
             <input
@@ -52,8 +54,8 @@ export default function Modal({ onClose }: ModalProps) {
           </div>
 
           {/* Email */}
-          <div className="mb-4">
-            <label className="block text-[14px] font-semibold text-[#1D2029] font-montserrat">
+          <div className="flex flex-col">
+            <label className="text-[14px] font-semibold text-[#1D2029] font-montserrat mb-2">
               Email*
             </label>
             <input
@@ -65,8 +67,8 @@ export default function Modal({ onClose }: ModalProps) {
           </div>
 
           {/* Country */}
-          <div className="mb-4">
-            <label className="block text-[14px] font-semibold text-[#1D2029] font-montserrat">
+          <div className="flex flex-col">
+            <label className="text-[14px] font-semibold text-[#1D2029] font-montserrat mb-2">
               Country*
             </label>
             <div className="relative">
@@ -85,39 +87,41 @@ export default function Modal({ onClose }: ModalProps) {
           </div>
 
           {/* Company */}
-          <div className="mb-6">
-            <label className="block text-[14px] font-semibold text-[#1D2029] font-montserrat">
+          <div className="flex flex-col">
+            <label className="text-[14px] font-semibold text-[#1D2029] font-montserrat mb-2">
               Company*
             </label>
             <input
               type="text"
-              className="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-blue-500 outline-none text-[14px] leading-[20px] font-montserrat"
+              className="w-full border border-gray-300 p-3 rounded-md  outline-none text-[14px] leading-[20px] font-montserrat"
               placeholder="Enter Company Name"
               required
             />
           </div>
 
           {/* Submit Button */}
-          <button
-            type="submit"
-            className="w-[232px] h-[42px] bg-[#1492EF] text-white font-semibold text-[12px] leading-[20px] rounded-[32px] hover:bg-blue-700 transition mx-auto flex items-center justify-center"
-            style={{
-              paddingTop: "12px",
-              paddingBottom: "12px",
-              paddingLeft: "18px",
-              paddingRight: "18px",
-            }}
-          >
-            SIGN ME UP
-          </button>
-        </form>
+          <div className="flex justify-center">
+            <button
+              type="submit"
+              className="w-[232px] h-[42px] bg-[#1492EF] text-white font-semibold text-[14px] leading-[20px] rounded-[32px] hover:bg-blue-700 transition flex items-center justify-center"
+              style={{
+                paddingTop: "12px",
+                paddingBottom: "12px",
+                paddingLeft: "18px",
+                paddingRight: "18px",
+              }}
+            >
+              SIGN ME UP
+            </button>
+          </div>
 
         {/* Privacy Policy */}
-        <p className="text-xs text-gray-500 text-center mt-4">
+        <p className="text-xs text-gray-500 text-center">
           By continuing you agree to our{" "}
           <a href="/privacy-policy" className="text-blue-500">Privacy Policy</a> and{" "}
           <a href="/terms" className="text-blue-500">Terms & Conditions</a>.
         </p>
+        </form>
       </div>
     </div>
   );
