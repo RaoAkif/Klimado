@@ -22,9 +22,8 @@ export default function Hero() {
             ESG Software for CSRD Reporting: Easy. Affordable. Fast.
           </h1>
           <Line />
-          <p className="p-content">
-            ESG Tool for 360° sustainability solution for EU businesses across
-            all sectors.
+          <p className="p-content" style={{ fontWeight: "600" }}>
+            ESG Tool for 360° sustainability solution for EU businesses across all sectors.
           </p>
           <ul className="flex flex-col gap-2 md:flex-row md:gap-5 lg:flex-col lg:gap-2 lg:">
             <li className="p-content flex gap-1 items-center">
