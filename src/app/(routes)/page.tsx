@@ -1,3 +1,4 @@
+"use client";
 import FAQs from "@/components/sections/faqs/faqs";
 import GetStarted from "@/components/sections/get-started/get-started-section";
 import Hero from "@/(routes)/components/hero";
