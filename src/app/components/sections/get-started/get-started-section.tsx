@@ -21,7 +21,7 @@ export default function GetStarted() {
               Contact Us
             </Link>
             <Link
-              href={EXTERNAL_LINKS.login}
+              href={EXTERNAL_LINKS.getFreeScore}
               className="btn btn-secondary ">
               Get Free Score
             </Link>

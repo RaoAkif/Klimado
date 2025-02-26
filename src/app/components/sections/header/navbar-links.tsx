@@ -45,7 +45,7 @@ export default function NavbarLinks({
         </Link>
       </li>
       <li>
-        <Link href="/login" className="btn btn-primary flex gap-1 items-center">
+        <Link href={EXTERNAL_LINKS.login}className="btn btn-primary flex gap-1 items-center">
           <LogIn className="size-4" />
           Sign in
         </Link>
