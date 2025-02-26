@@ -27,6 +27,9 @@ export default function NavbarLinks({
       <li className="hover:text-primary transition-all ease-in">
         <Link href={EXTERNAL_LINKS.pricing}>Pricing</Link>
       </li>
+      <li className="hover:text-primary transition-all ease-in">
+        <Link href={EXTERNAL_LINKS.resources}>Resources</Link>
+      </li>
       <Dropdown
         setIsMenu={setIsMenu}
         name="Company"

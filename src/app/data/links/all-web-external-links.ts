@@ -1,5 +1,6 @@
 export const EXTERNAL_LINKS = {
   pricing: "/pricing",
+  resources: "/resources",
   blog: "/",
   login: "/",
   esgToolBusiness: "/esg-software-for-sustainability-reporting",

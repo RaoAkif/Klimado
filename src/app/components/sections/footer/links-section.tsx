@@ -23,6 +23,16 @@ const LINKS_INFO = [
     ],
   },
   {
+    title: "Resources",
+    links: [
+      { title: "Plans & Resources", link: EXTERNAL_LINKS.resources },
+      {
+        title: "*Free Initial ESG Score",
+        link: EXTERNAL_LINKS.login,
+      },
+    ],
+  },
+  {
     title: "Company",
     links: [
       { title: "About Us", link: EXTERNAL_LINKS.aboutUs },
