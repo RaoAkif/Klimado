@@ -7,11 +7,12 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import { ChevronsDown, ChevronsUp } from "lucide-react";
+import { ChevronsUp } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 import Markdown from "react-markdown";
 import Line from "../../ui/line";
+import Image from "next/image";
 
 export default function FAQs({
   title,
@@ -75,7 +76,8 @@ export default function FAQs({
             </>
           ) : (
             <>
-              VIEW MORE <ChevronsDown />
+              <span className="text-sm">READ MORE FAQS</span>
+              <Image width={16} height={16} alt="arrow up icon" src="/img/icons/arrow-up-right.png" />
             </>
           )}
         </button>
