@@ -1,6 +1,5 @@
 import Badge from "@/components/ui/badge";
 import Line from "@/components/ui/line";
-import StripeBadge from "./stripe-badge";
 
 export default function Hero() {
   return (
