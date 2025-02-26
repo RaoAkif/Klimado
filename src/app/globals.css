@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow: auto;
+}
+
+.container {
+  @apply mx-auto max-w-[1020px] w-full h-full xl:px-0 px-5;
+}
+
+.container-wide {
+  @apply mx-auto max-w-[1300px] w-full h-full 2xl:px-0 px-5;
+}
+
+.p-content {
+  @apply text-sm text-typo-secondary;
+}
+
+.btn {
+  @apply rounded-[32px] py-1.5 px-[18px] font-bold text-sm uppercase text-center flex items-center justify-center border min-w-[150px] gap-2;
+}
+
+.btn-big {
+  @apply px-16 py-2;
+}
+
+.btn-primary {
+  @apply bg-primary text-white border-primary hover:bg-primary-dark transition-all  ease-in;
+}
+.btn-secondary {
+  @apply bg-white text-primary border-primary hover:bg-primary hover:text-white transition-all  ease-in;
+}
+
+.h1-content {
+  @apply font-semibold text-xl lg:text-3xl;
+}
+
+.h2-content {
+  @apply font-semibold text-lg lg:text-2xl;
+}
+
+.first-section {
+  @apply py-10;
+}
+
+.card {
+  padding: 20px 20px 20px 20px;
+  border-radius: 24px;
+  box-shadow: 0px 12px 48px -4px rgba(0, 0, 0, 0.06);
+  background-color: white;
+}
+.cards-shadow {
+  box-shadow: 0px 12px 48px -4px rgba(0, 0, 0, 0.06);
+}
+
+.blue-shadow-hover:hover {
+  box-shadow: 0px 0px 8px 0px rgba(20, 146, 239, 0.25);
+  box-shadow: 0px 48px 72px -32px rgba(0, 115, 255, 0.1);
+}
+.blue-shadow {
+  box-shadow: 0px 0px 8px 0px rgba(20, 146, 239, 0.25);
+  box-shadow: 0px 48px 72px -32px rgba(0, 115, 255, 0.1);
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+
+.carousel-infinite {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.carousel-infinite::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10%;
+  height: 100%;
+  background: linear-gradient(to left, white, transparent);
+  z-index: 2;
+}
+
+.carousel-infinite::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  background: linear-gradient(to right, white, transparent);
+  z-index: 2;
+}
+
+.carousel-infinite .carousel-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+.carousel-infinite .carousel-item {
+  flex: 0 0 auto;
+  margin: 0 40px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
