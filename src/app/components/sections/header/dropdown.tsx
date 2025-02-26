@@ -14,28 +14,31 @@ export default function Dropdown({
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
-    <li>
-      <button
-        className="flex gap-1 uppercase relative"
-        onClick={() => setShowDropdown(!showDropdown)}
-        onMouseEnter={() => setShowDropdown(true)}>
+    <li
+      className="relative"
+      onMouseEnter={() => setShowDropdown(true)}
+      onMouseLeave={() => setShowDropdown(false)}
+    >
+      <button className="flex gap-1 uppercase">
         {name} <ChevronDown className="size-5 text-primary" />
-        {showDropdown && (
-          <div
-            className="absolute flex flex-col bg-white border justify-start text-start text-nowrap rounded-lg  z-[9999] top-8"
-            onMouseLeave={() => setShowDropdown(!showDropdown)}>
-            {links.map((link) => (
-              <Link
-                key={link.name}
-                href={link.link}
-                className="border-b py-3 px-4 hover:text-primary transition-all duration-300 font-semibold"
-                onClick={() => setIsMenu(false)}>
-                {link.name}
-              </Link>
-            ))}
-          </div>
-        )}
       </button>
+      {showDropdown && (
+        <div className="absolute flex flex-col bg-white border justify-start text-start text-nowrap rounded-lg z-[9999] top-5">
+          {links.map((link) => (
+            <Link
+              key={link.name}
+              href={link.link}
+              className="border-b py-3 px-4 hover:text-primary transition-all duration-300 font-semibold"
+              onClick={() => {
+                setIsMenu(false);
+                setShowDropdown(false); // Close the dropdown
+              }}
+            >
+              {link.name}
+            </Link>
+          ))}
+        </div>
+      )}
     </li>
   );
 }
