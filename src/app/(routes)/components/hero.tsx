@@ -25,17 +25,17 @@ export default function Hero() {
           <p className="p-content" style={{ fontWeight: "600" }}>
             ESG Tool for 360° sustainability solution for EU businesses across all sectors.
           </p>
-          <ul className="flex flex-col gap-2 md:flex-row md:gap-5 lg:flex-col lg:gap-2 lg:">
-            <li className="p-content flex gap-1 items-center">
-              <CircleCheck className="text-primary size-5" /> No Training
+          <ul className="flex flex-col gap-2 md:flex-row md:gap-5 lg:flex-col lg:gap-2 mt-[-9px]">
+            <li className="p-content flex gap-1 items-center text-sm">
+              <Image className="mr-1" height={14} width={14} src="/img/icons/Vector (Stroke).png" alt="tick icon" /> No Training
               Required
             </li>
-            <li className="p-content flex gap-1 items-center">
-              <CircleCheck className="text-primary size-5" /> Zero Consultancy
+            <li className="p-content flex gap-1 items-center text-sm">
+              <Image className="mr-1" height={14} width={14} src="/img/icons/Vector (Stroke).png" alt="tick icon" /> Zero Consultancy
               Fee
             </li>
-            <li className="p-content flex gap-1 items-center">
-              <CircleCheck className="text-primary size-5" /> Setup Within
+            <li className="p-content flex gap-1 items-center text-sm">
+              <Image className="mr-1" height={14} width={14} src="/img/icons/Vector (Stroke).png" alt="tick icon" /> Setup Within
               Minutes
             </li>
           </ul>
