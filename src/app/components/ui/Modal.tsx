@@ -1,9 +1,16 @@
 import { useEffect } from "react";
-import { ChevronDown } from "lucide-react"; // Import the correct dropdown icon
+import { ChevronDown } from "lucide-react"; // Import correct dropdown icon
 
 interface ModalProps {
   onClose: () => void;
 }
+
+// List of G20 countries (excluding India, adding Pakistan instead)
+const G20_COUNTRIES = [
+  "Argentina", "Australia", "Brazil", "Canada", "China", "France", "Germany",
+  "Indonesia", "Italy", "Japan", "Mexico", "Pakistan", "Russia", "Saudi Arabia", "South Africa",
+  "South Korea", "Turkey", "United Kingdom", "United States", "European Union"
+];
 
 export default function Modal({ onClose }: ModalProps) {
   useEffect(() => {
@@ -78,7 +85,11 @@ export default function Modal({ onClose }: ModalProps) {
                 required
               >
                 <option value="">Select Country</option>
-                {/* Add country options */}
+                {G20_COUNTRIES.map((country) => (
+                  <option key={country} value={country}>
+                    {country}
+                  </option>
+                ))}
               </select>
               {/* Updated Correct Dropdown Icon */}
               <ChevronDown className="absolute right-4 top-1/2 transform -translate-y-1/2 text-[#1492EF] w-5 h-5" />
@@ -113,13 +124,14 @@ export default function Modal({ onClose }: ModalProps) {
               SIGN ME UP
             </button>
           </div>
+        </form>
+
         {/* Privacy Policy */}
         <p className="text-xs text-gray-500 text-center mt-4">
           By continuing you agree to our{" "}
           <a href="/privacy-policy" className="text-blue-500">Privacy Policy</a> and{" "}
           <a href="/terms" className="text-blue-500">Terms & Conditions</a>.
         </p>
-        </form>
       </div>
     </div>
   );
