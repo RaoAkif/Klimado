@@ -43,7 +43,7 @@ export default function Hero() {
 
           <DividerSlim />
           <Link href={EXTERNAL_LINKS.login} className="gap-2 btn btn-secondary">
-            Free esg score <ArrowRight />
+            Pre Sign Up <ArrowRight />
           </Link>
           <p className="p-content font-medium">*no credit card required</p>
         </div>
