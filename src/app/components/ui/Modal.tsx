@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { ChevronDown } from "lucide-react"; // Import the correct dropdown icon
 
 interface ModalProps {
   onClose: () => void;
@@ -66,7 +67,7 @@ export default function Modal({ onClose }: ModalProps) {
             />
           </div>
 
-          {/* Country */}
+          {/* Country Dropdown with Correct Icon */}
           <div className="flex flex-col">
             <label className="text-[14px] font-semibold text-[#1D2029] font-montserrat mb-2">
               Country*
@@ -79,10 +80,8 @@ export default function Modal({ onClose }: ModalProps) {
                 <option value="">Select Country</option>
                 {/* Add country options */}
               </select>
-              {/* Dropdown Icon */}
-              <span className="absolute top-3 right-4 text-[#1492EF]">
-                ▼
-              </span>
+              {/* Updated Correct Dropdown Icon */}
+              <ChevronDown className="absolute right-4 top-1/2 transform -translate-y-1/2 text-[#1492EF] w-5 h-5" />
             </div>
           </div>
 
@@ -93,14 +92,14 @@ export default function Modal({ onClose }: ModalProps) {
             </label>
             <input
               type="text"
-              className="w-full border border-gray-300 p-3 rounded-md  outline-none text-[14px] leading-[20px] font-montserrat"
+              className="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-blue-500 outline-none text-[14px] leading-[20px] font-montserrat"
               placeholder="Enter Company Name"
               required
             />
           </div>
 
           {/* Submit Button */}
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-3 -mb-2">
             <button
               type="submit"
               className="w-[232px] h-[42px] bg-[#1492EF] text-white font-semibold text-[14px] leading-[20px] rounded-[32px] hover:bg-blue-700 transition flex items-center justify-center"
@@ -114,9 +113,8 @@ export default function Modal({ onClose }: ModalProps) {
               SIGN ME UP
             </button>
           </div>
-
         {/* Privacy Policy */}
-        <p className="text-xs text-gray-500 text-center">
+        <p className="text-xs text-gray-500 text-center mt-4">
           By continuing you agree to our{" "}
           <a href="/privacy-policy" className="text-blue-500">Privacy Policy</a> and{" "}
           <a href="/terms" className="text-blue-500">Terms & Conditions</a>.
