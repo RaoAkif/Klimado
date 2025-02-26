@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  @apply mx-auto max-w-[1020px] w-full h-full xl:px-0 px-5;
+  @apply mx-auto max-w-[1100px] w-full h-full xl:px-0 px-5;
 }
 
 .container-wide {
@@ -39,10 +39,6 @@ body {
 
 .h2-content {
   @apply font-semibold text-lg lg:text-2xl;
-}
-
-.first-section {
-  @apply py-10;
 }
 
 .card {

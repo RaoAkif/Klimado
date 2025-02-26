@@ -8,7 +8,7 @@ import { EXTERNAL_LINKS } from "@/data/links/all-web-external-links";
 export default function Hero() {
   return (
     <section className="first-section">
-      <div className="flex flex-col  lg:mt-20 lg:gap-5 container relative">
+      <div className="flex flex-col  lg:mt-12 lg:gap-5 container relative">
         <Image
           src={"/hero-business-page.svg"}
           alt="Hero Image"
