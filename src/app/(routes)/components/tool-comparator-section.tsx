@@ -2,7 +2,8 @@ import Badge from "@/components/ui/badge";
 import DividerSlim from "@/components/ui/divider-slim";
 import Line from "@/components/ui/line";
 import { EXTERNAL_LINKS } from "@/data/links/all-web-external-links";
-import { ArrowUpRight, CircleCheck } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function ToolComparatorSection() {
@@ -30,20 +31,20 @@ export default function ToolComparatorSection() {
                 <DividerSlim />
               </div>
               <ul className="space-y-3">
-                <li className="flex gap-2 p-content font-medium">
-                  <CircleCheck className="text-primary size-5" />
+                <li className="flex gap-2 p-content font-medium align-center">
+                  <Image style={{height: '16px', width: '16px'}} src="/img/icons/Vector bullet2.png" alt="vector bullet 2" width={16} height={16} />
                   CSRD-compliant scorecard (in minutes)
                 </li>
-                <li className="flex gap-2 p-content font-medium">
-                  <CircleCheck className="text-primary size-5" />
+                <li className="flex gap-2 p-content font-medium align-center">
+                  <Image style={{height: '16px', width: '16px'}} src="/img/icons/Vector bullet2.png" alt="vector bullet 2" width={16} height={16} />
                   ESG progress report & action plan
                 </li>
-                <li className="flex gap-2 p-content font-medium">
-                  <CircleCheck className="text-primary size-5" />
+                <li className="flex gap-2 p-content font-medium align-center">
+                  <Image style={{height: '16px', width: '16px'}} src="/img/icons/Vector bullet2.png" alt="vector bullet 2" width={16} height={16} />
                   Sustainability badge (if qualified)
                 </li>
-                <li className="flex gap-2 p-content font-medium">
-                  <CircleCheck className="text-primary size-5" />
+                <li className="flex gap-2 p-content font-medium align-center">
+                  <Image style={{height: '16px', width: '16px'}} src="/img/icons/Vector bullet2.png" alt="vector bullet 2" width={16} height={16} />
                   ESG news & regulation updates
                 </li>
               </ul>
@@ -64,20 +65,20 @@ export default function ToolComparatorSection() {
                 <DividerSlim />
               </div>
               <ul className="space-y-3">
-                <li className="flex gap-2 p-content font-medium">
-                  <CircleCheck className="text-primary size-5" />
+                <li className="flex gap-2 p-content font-medium align-center">
+                  <Image style={{height: '16px', width: '16px'}} src="/img/icons/Vector bullet2.png" alt="vector bullet 2" width={16} height={16} />
                   Map entire supply chain by ESG score
                 </li>
-                <li className="flex gap-2 p-content font-medium">
-                  <CircleCheck className="text-primary size-5" />
+                <li className="flex gap-2 p-content font-medium align-center">
+                  <Image style={{height: '16px', width: '16px'}} src="/img/icons/Vector bullet2.png" alt="vector bullet 2" width={16} height={16} />
                   Manage supply chain ESG risks
                 </li>
-                <li className="flex gap-2 p-content font-medium">
-                  <CircleCheck className="text-primary size-5" />
+                <li className="flex gap-2 p-content font-medium align-center">
+                  <Image style={{height: '16px', width: '16px'}} src="/img/icons/Vector bullet2.png" alt="vector bullet 2" width={16} height={16} />
                   Track and monitor progress of suppliers
                 </li>
-                <li className="flex gap-2 p-content font-medium">
-                  <CircleCheck className="text-primary size-5" />
+                <li className="flex gap-2 p-content font-medium align-center">
+                  <Image style={{height: '16px', width: '16px'}} src="/img/icons/Vector bullet2.png" alt="vector bullet 2" width={16} height={16} />
                   Sustainable partner label (if qualified)
                 </li>
               </ul>
