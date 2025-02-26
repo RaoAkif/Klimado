@@ -1,5 +1,7 @@
+"use client";
+
 import { useEffect } from "react";
-import { ChevronDown } from "lucide-react"; // Import correct dropdown icon
+import { ChevronDown } from "lucide-react";
 
 interface ModalProps {
   onClose: () => void;

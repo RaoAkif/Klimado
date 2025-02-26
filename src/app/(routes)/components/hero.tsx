@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Line from "@/components/ui/line";
 import Link from "next/link";
-import { ArrowRight, CircleCheck } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import DividerSlim from "@/components/ui/divider-slim";
 import { EXTERNAL_LINKS } from "@/data/links/all-web-external-links";
 

@@ -14,11 +14,11 @@ const GetFreeScorePage: React.FC = () => {
 const styles = {
   container: {
     display: 'flex',
-    flexDirection: 'column' as 'column',
+    flexDirection: 'column' as const,
     alignItems: 'center',
     justifyContent: 'center',
     height: '100vh',
-    textAlign: 'center' as 'center',
+    textAlign: 'center' as const,
   },
   heading: {
     fontSize: '2rem',
