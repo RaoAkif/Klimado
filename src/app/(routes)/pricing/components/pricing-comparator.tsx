@@ -1,10 +1,10 @@
+import { EXTERNAL_LINKS } from "@/data/links/all-web-external-links";
 import Image from "next/image";
 import starterBadge from "@/(routes)/pricing/assets/starter-plan-badge.svg";
 import premiumBadge from "@/(routes)/pricing/assets/premium-plan-badge.svg";
 import DividerSlim from "@/components/ui/divider-slim";
 import { CircleCheck } from "lucide-react";
 import Link from "next/link";
-import { EXTERNAL_LINKS } from "@/data/links/all-web-external-links";
 import Badge from "@/components/ui/badge";
 
 const CARDS_INFO = [
@@ -12,6 +12,7 @@ const CARDS_INFO = [
     title: "Starter",
     price: 299,
     img: starterBadge,
+    link: EXTERNAL_LINKS.starter,
     body: [
       "Easy to read CSRD-Compliant Scorecard",
       "Downloadable Scorecard for Internal and External Communication",
@@ -21,6 +22,7 @@ const CARDS_INFO = [
     title: "Standard",
     price: 499,
     img: premiumBadge,
+    link: EXTERNAL_LINKS.standard,
     popular: true,
     body: [
       "All starter package features +",
@@ -38,7 +40,7 @@ export default function PricingComparator() {
         {CARDS_INFO.map((card) => (
           <div
             key={card.title}
-            className="flex flex-col gap-3 p-7 rounded-3xl  border-2 border-transparent hover:border-primary transition-all duration-200 hover:bg-primary-light h-full relative blue-shadow-hover cards-shadow">
+            className="flex flex-col gap-3 p-7 rounded-3xl border-2 border-transparent hover:border-primary transition-all duration-200 hover:bg-primary-light h-full relative blue-shadow-hover cards-shadow">
             {card.popular && (
               <div className="absolute top-7 right-7">
                 <Badge>Popular</Badge>
@@ -48,7 +50,7 @@ export default function PricingComparator() {
               src={card.img}
               width={104}
               height={104}
-              alt="starter plan badge"
+              alt={`${card.title} plan badge`}
               className="-ml-5 -mb-4"
             />
             <h4 className="font-semibold text-xl">{card.title}</h4>
@@ -57,7 +59,7 @@ export default function PricingComparator() {
                 {card.price}
               </p>
               <span className="text-lg text-primary font-semibold">€</span>
-              <span className="p-content font-normal  self-end">/yr.</span>
+              <span className="p-content font-normal self-end">/yr.</span>
             </div>
             <div className="my-3">
               <DividerSlim />
@@ -74,8 +76,8 @@ export default function PricingComparator() {
             </ul>
 
             <Link
-              href={EXTERNAL_LINKS.login}
-              className="btn btn-primary uppercase mx-auto btn-big  mt-auto">
+              href={card.link}
+              className="btn btn-primary uppercase mx-auto btn-big mt-auto">
               Choose this plan
             </Link>
           </div>

@@ -3,6 +3,8 @@ export const EXTERNAL_LINKS = {
   resources: "/resources",
   blog: "/",
   login: "/login",
+  starter: "/starter-plan",
+  standard: "/standard-plan",
   getFreeScore: "/get-free-score",
   esgToolBusiness: "/esg-software-for-sustainability-reporting",
   esgToolSupply: "/esg-supply-chain-software",
