@@ -44,11 +44,6 @@ export default function NavbarLinks({
           ]}
         />
         <li>
-          <Link href={EXTERNAL_LINKS.contact} className="btn btn-secondary">
-            Book a demo
-          </Link>
-        </li>
-        <li>
           <button
             onClick={() => setIsModalOpen(true)}
             className="btn btn-primary flex gap-1 items-center"
