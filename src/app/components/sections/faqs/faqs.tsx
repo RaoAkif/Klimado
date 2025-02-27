@@ -7,12 +7,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import { ChevronsUp } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 import Markdown from "react-markdown";
 import Line from "../../ui/line";
-import Image from "next/image";
 
 export default function FAQs({
   title,
@@ -63,24 +62,27 @@ export default function FAQs({
               ))}
         </Accordion>
         <button
-          onClick={() => {
-            if (showAll) {
-              router.replace("#FAQsSection");
-            }
-            setShowAll(!showAll);
-          }}
-          className="self-center mt-10 flex gap-3 items-center text-primary font-bold">
-          {showAll ? (
-            <>
-              SHOW LESS <ChevronsUp />
-            </>
-          ) : (
-            <>
-              <span className="text-sm">READ MORE FAQS</span>
-              <Image width={16} height={16} alt="arrow up icon" src="/img/icons/arrow-up-right.png" />
-            </>
-          )}
-        </button>
+  onClick={() => {
+    if (showAll) {
+      router.replace("#FAQsSection");
+    }
+    setShowAll(!showAll);
+  }}
+  className="self-center mt-10 flex gap-3 items-center text-primary font-bold"
+>
+  {showAll ? (
+    <>
+      <span className="text-sm">SHOW LESS</span>
+      <ChevronUp size={16} />
+    </>
+  ) : (
+    <>
+      <span className="text-sm">READ MORE FAQS</span>
+      <ChevronDown size={16} />
+    </>
+  )}
+</button>
+
       </div>
     </section>
   );

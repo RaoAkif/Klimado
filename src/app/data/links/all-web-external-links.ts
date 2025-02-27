@@ -8,6 +8,7 @@ export const EXTERNAL_LINKS = {
   getFreeScore: "/get-free-score",
   esgToolBusiness: "/esg-software-for-sustainability-reporting",
   esgToolSupply: "/esg-supply-chain-software",
+  terms: "/terms-and-conditions",
   contact: "/contact-us",
   aboutUs: "/about-us",
   impakterMedia: "https://impakter.com/",
