@@ -55,7 +55,7 @@ export default function ToolComparatorSection() {
               </div>
             </div>
 
-            <div className=" p-8 rounded-3xl bg-[#F6F9FD] w-full border-2 border-primary hover:border-primary blue-shadow-hover cards-shadow  transition-all ease-in-out duration-200">
+            <div className=" p-8 rounded-3xl bg-[#F8FBFF] w-full border-2 border-primary hover:border-primary blue-shadow-hover cards-shadow  transition-all ease-in-out duration-200">
               <h4 className="font-semibold text-lg">
                 ESG Tool for Enterprises
               </h4>

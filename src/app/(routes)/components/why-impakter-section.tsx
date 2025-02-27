@@ -44,7 +44,7 @@ export default function WhyImpkaterSection() {
           <Badge>Features</Badge>
         </div>
         <h2 className="h2-content">
-          Why Businesses Choose IMPAKTER PRO ESG Software
+          Why Businesses Choose KLIMADO ESG Software
         </h2>
         <Line />
         <p className="p-content font-medium">

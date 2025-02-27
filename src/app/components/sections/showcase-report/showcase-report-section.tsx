@@ -1,3 +1,4 @@
+import Badge from "@/components/ui/badge";
 import Line from "@/components/ui/line";
 import Image from "next/image";
 
@@ -23,13 +24,16 @@ export default function ShowcaseReport() {
   return (
     <section className="py-20">
       <div className="container flex flex-col gap-y-8 ml-16">
-        <span className="ml-4">
-          <Line />
-        </span>
+        <div className="ml-4">
+          <Badge>Explore</Badge>
+        </div>
         <h2 className="text-2xl font-bold ml-4">
         Showcase Your Sustainability Reporting to Attract Customers
       </h2>
-      <p className="font-medium max-w-4xl text-base text-[#7C7C7C] ml-4">
+      <span className="ml-4">
+        <Line />
+      </span>
+      <p className="font-medium max-w-[95%] text-base text-[#7C7C7C] ml-4">
         Earn our sustainability badge as a payoff to your sustainability efforts.
         Display it digitally or physically to attract eco-conscious customers,
         investors, & partners.
