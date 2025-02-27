@@ -4,11 +4,11 @@ import Image from "next/image";
 
 const CardsInfo = [
   {
-    title: "VERIFIED, if rated A or B for a given year",
+    title: "VERIFIED, if rated A or B \n for a given year",
     image: "/badge-1.webp",
   },
   {
-    title: "PENDING, if rated C with exceptional progress in a year",
+    title: "PENDING, if rated C with exceptional \n progress in a year",
     image: "/badge-2.webp",
   },
 ];
@@ -41,7 +41,14 @@ export default function ShowcaseReport() {
                 height={291}
                 width={291}
               />
-              <h4 className="font-semibold text-lg md:text-xl">{card.title}</h4>
+              <h4 className="text-base font-semibold">
+              {card.title.split("\n").map((line, i) => (
+                <span key={i}>
+                  {line}
+                  <br />
+                </span>
+              ))}
+            </h4>
               <Line />
             </div>
           ))}
