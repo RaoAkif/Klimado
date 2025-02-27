@@ -1,7 +1,6 @@
 import DividerSlim from "@/components/ui/divider-slim";
 import LeftSection from "./left-section";
 import LinksSection from "./links-section";
-import ImpakterProTextLogo from "@/components/ui/impakter-pro-text-logo";
 import Link from "next/link";
 import { EXTERNAL_LINKS } from "@/data/links/all-web-external-links";
 import Image from "next/image";

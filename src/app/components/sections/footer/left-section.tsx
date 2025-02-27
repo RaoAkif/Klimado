@@ -1,4 +1,3 @@
-import ImpakterProTextLogo from "@/components/ui/impakter-pro-text-logo";
 import Link from "next/link";
 import {
   FaFacebook,
