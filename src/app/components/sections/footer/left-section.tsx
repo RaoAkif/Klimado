@@ -10,7 +10,7 @@ import {
 export default function LeftSection() {
   return (
     <div className="flex flex-col gap-4 pr-32">
-      <ImpakterProTextLogo />
+      <p className="text-xl font-semibold">Ready to get started?</p>
       <p className="p-content">
         IMPAKTER PRO is an AI-powered ESG software. It helps businesses with ESG
         scorecard, progress report, action plan, sustainability badge, and more.
@@ -28,28 +28,28 @@ export default function LeftSection() {
             target="_blank"
             rel="noreferrer"
             aria-label="Twitter">
-            <FaXTwitter />
+            <FaXTwitter style={{height: "24px", width: "24px"}} />
           </Link>
           <Link
             href="https://www.facebook.com/impakterdotcom/"
             target="_blank"
             rel="noreferrer"
             aria-label="Facebook">
-            <FaFacebook />
+            <FaFacebook style={{height: "24px", width: "24px"}} />
           </Link>
           <Link
             href="https://www.instagram.com/impakter/"
             target="_blank"
             rel="noreferrer"
             aria-label="Instagram">
-            <FaInstagram />
+            <FaInstagram style={{height: "24px", width: "24px"}} />
           </Link>
           <Link
             href="https://www.linkedin.com/company/impakter/posts/?feedView=all"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn">
-            <FaLinkedin />
+            <FaLinkedin style={{height: "24px", width: "24px"}} />
           </Link>
         </div>
       </div>

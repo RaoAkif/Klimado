@@ -8,9 +8,9 @@ export default function GetStarted() {
     <section className="py-20 bg-primary-light relative overflow-hidden">
       <div className="grid grid-cols-1 lg:grid-cols-2 container-wide">
         <div className="flex flex-col gap-5 lg:pr-20">
-          <ImpakterProTextLogo />
-          <h2 className="h2-content">Ready to get started?</h2>
-          <p className="p-content font-semibold">
+          <p className="text-xs font-bold">KLIMADO</p>
+          <h2 className="h2-content text-2xl">Ready to get started?</h2>
+          <p className="p-content font-normal">
             From assessing your current ESG performance to road-mapping your
             path to comprehensive sustainability
           </p>
