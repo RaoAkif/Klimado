@@ -13,43 +13,64 @@ const CardsInfo = [
   },
 ];
 
+// ✅ Updated Verified Products Paths
+const VerifiedProducts = [
+  "/img/verified/verified_product_1.png",
+  "/img/verified/verified_product_2.png",
+  "/img/verified/verified_product_3.png",
+];
+
 export default function ShowcaseReport() {
   return (
     <section className="py-20">
-      <div className="container flex flex-col gap-y-5">
-        <div>
-          <Badge>Badges</Badge>
-        </div>
-        <h2 className="h2-content">
+      <div className="container flex flex-col gap-y-8">
+        <h2 className="h2-content text-center">
           Showcase Your Sustainability Reporting to Attract Customers
         </h2>
         <Line />
-        <p className="p-content font-medium">
+        <p className="p-content font-medium text-center max-w-2xl mx-auto">
           Earn our sustainability badge as a payoff to your sustainability
           efforts. Display it digitally or physically to attract eco-conscious
           customers, investors, & partners.
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-9 mx-auto w-3/4 mt-5">
+
+        {/* ✅ Badge Cards Section (Responsive Two-Column Layout) */}
+        <div className="flex flex-col items-center gap-4 md:flex-row md:justify-center md:gap-10 w-full mt-5">
           {CardsInfo.map((card, index) => (
             <div
               key={index}
-              className="flex flex-col justify-between items-center gap-5 p-12 text-center text-balance card rounded-2xl">
+              className="flex flex-col justify-between items-center text-center gap-4 bg-white rounded-3xl shadow-md shadow-gray-200 border border-gray-100 p-6 max-w-lg flex-1"
+            >
               <Image
                 alt="IMPAKTER Badge"
                 src={card.image}
-                className="w-auto h-auto sm:h-[200px]"
                 height={291}
                 width={291}
               />
-              <h4 className="text-base font-semibold">
-              {card.title.split("\n").map((line, i) => (
-                <span key={i}>
-                  {line}
-                  <br />
-                </span>
-              ))}
-            </h4>
-              <Line />
+              <h4 className="text-base font-semibold leading-tight">
+                {card.title.split("\n").map((line, i) => (
+                  <span key={i}>
+                    {line}
+                    <br />
+                  </span>
+                ))}
+              </h4>
+              <div className="w-6 h-1 bg-primary rounded-full"></div>
+            </div>
+          ))}
+        </div>
+
+        {/* ✅ Verified Products Grid Below (Centered, Consistent Size) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+          {VerifiedProducts.map((image, index) => (
+            <div key={index} className="flex justify-center">
+              <Image
+                alt={`Verified Product ${index + 1}`}
+                src={image}
+                width={494}
+                height={410}
+                className="w-auto h-auto shadow-md rounded-3xl border border-gray-200"
+              />
             </div>
           ))}
         </div>
