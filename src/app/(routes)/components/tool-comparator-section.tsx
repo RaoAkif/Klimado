@@ -13,9 +13,8 @@ export default function ToolComparatorSection() {
           <div>
             <Badge>Explore</Badge>
           </div>
-          <h2 className="h2-content">
-            Many Challenges of Corporate Sustainability Reporting. All Solved by
-            One ESG Reporting Software.
+          <h2 className="h2-content w-[90%]">
+            Many Challenges of Corporate Sustainability Reporting. All Solved by One ESG Reporting Software.
           </h2>
           <Line />
           <p className="p-content font-semibold">
@@ -56,7 +55,7 @@ export default function ToolComparatorSection() {
               </div>
             </div>
 
-            <div className=" p-8 rounded-3xl bg-white w-full border-2 border-primary hover:border-primary blue-shadow-hover cards-shadow  transition-all ease-in-out duration-200">
+            <div className=" p-8 rounded-3xl bg-[#F6F9FD] w-full border-2 border-primary hover:border-primary blue-shadow-hover cards-shadow  transition-all ease-in-out duration-200">
               <h4 className="font-semibold text-lg">
                 ESG Tool for Enterprises
               </h4>
