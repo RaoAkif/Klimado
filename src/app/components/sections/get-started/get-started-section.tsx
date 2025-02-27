@@ -1,4 +1,3 @@
-import ImpakterProTextLogo from "@/components/ui/impakter-pro-text-logo";
 import { EXTERNAL_LINKS } from "@/data/links/all-web-external-links";
 import Image from "next/image";
 import Link from "next/link";
