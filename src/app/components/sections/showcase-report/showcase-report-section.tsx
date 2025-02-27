@@ -29,7 +29,7 @@ export default function ShowcaseReport() {
         <h2 className="text-2xl font-bold ml-4">
         Showcase Your Sustainability Reporting to Attract Customers
       </h2>
-      <p className="font-medium max-w-2xl text-base text-[#7C7C7C] ml-4">
+      <p className="font-medium max-w-4xl text-base text-[#7C7C7C] ml-4">
         Earn our sustainability badge as a payoff to your sustainability efforts.
         Display it digitally or physically to attract eco-conscious customers,
         investors, & partners.
