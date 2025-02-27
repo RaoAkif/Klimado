@@ -6,6 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import Modal from '@/components/ui/Modal';
 import Line from '@/components/ui/line';
 import DividerSlim from '@/components/ui/divider-slim';
+import Badge from '@/components/ui/badge';
 
 export default function Hero() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -22,6 +23,9 @@ export default function Hero() {
         />
 
         <div className="flex flex-col items-center text-center gap-y-3 md:gap-y-5 lg:text-start lg:items-start w-full lg:w-[45%]">
+          <div>
+            <Badge>For Businesses</Badge>
+          </div>
           <h1 className="h1-content">
             ESG Software for CSRD Reporting: Easy. Affordable. Fast.
           </h1>
