@@ -27,7 +27,7 @@ export default function Hero() {
           </h1>
           <Line />
           <p className="p-content" style={{ fontWeight: '600' }}>
-            ESG Tool for 360° sustainability solution for EU businesses across all sectors.
+            ESG Tool for 360° sustainability solution for EU businesses <br /> across all sectors.
           </p>
           <ul className="flex flex-col gap-2 md:flex-row md:gap-5 lg:flex-col lg:gap-2 mt-[-9px]">
             <li className="p-content flex gap-1 items-center text-sm">
