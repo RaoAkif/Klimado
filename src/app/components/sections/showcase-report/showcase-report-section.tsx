@@ -1,4 +1,3 @@
-import Badge from "@/components/ui/badge";
 import Line from "@/components/ui/line";
 import Image from "next/image";
 
@@ -23,16 +22,18 @@ const VerifiedProducts = [
 export default function ShowcaseReport() {
   return (
     <section className="py-20">
-      <div className="container flex flex-col gap-y-8">
-        <h2 className="h2-content text-center">
-          Showcase Your Sustainability Reporting to Attract Customers
-        </h2>
-        <Line />
-        <p className="p-content font-medium text-center max-w-2xl mx-auto">
-          Earn our sustainability badge as a payoff to your sustainability
-          efforts. Display it digitally or physically to attract eco-conscious
-          customers, investors, & partners.
-        </p>
+      <div className="container flex flex-col gap-y-8 ml-16">
+        <span className="ml-4">
+          <Line />
+        </span>
+        <h2 className="text-2xl font-bold ml-4">
+        Showcase Your Sustainability Reporting to Attract Customers
+      </h2>
+      <p className="font-medium max-w-2xl text-base text-[#7C7C7C] ml-4">
+        Earn our sustainability badge as a payoff to your sustainability efforts.
+        Display it digitally or physically to attract eco-conscious customers,
+        investors, & partners.
+      </p>
 
         {/* ✅ Badge Cards Section (Responsive Two-Column Layout) */}
         <div className="flex flex-col items-center gap-4 md:flex-row md:justify-center md:gap-10 w-full mt-5">
