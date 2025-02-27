@@ -31,6 +31,7 @@ export default function Footer() {
               className="text-sm font-semibold hover:underline">
               Terms and Conditions
             </Link>
+            <span className="text-typo-secondary/50">|</span>
             <Link
               href={EXTERNAL_LINKS.privacyPolicy}
               className="text-sm font-semibold hover:underline">
