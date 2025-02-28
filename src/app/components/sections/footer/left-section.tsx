@@ -11,7 +11,7 @@ export default function LeftSection() {
     <div className="flex flex-col gap-4 pr-32">
       <p className="text-xl font-semibold">Ready to get started?</p>
       <p className="p-content">
-        IMPAKTER PRO is an AI-powered ESG software. It helps businesses with ESG
+        KLIMADO is an AI-powered ESG software. It helps businesses with ESG
         scorecard, progress report, action plan, sustainability badge, and more.
         Throughout the EU. Across industries.
       </p>
